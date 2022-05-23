@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-color: #92b4ec;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+  align-items: center;
+}
+
+h1 {
+  margin: 2rem 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.counter-card {
+  background-color: #6a67ce;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.counter-card > p {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.btn-container {
+  margin: 1rem 0;
+}
+
+.btn-container > button {
+  margin: 0 0.5rem;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: #224c8f;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  border: 3px solid #224c8f;
+  transition: all 0.2s ease;
+}
+
+.btn-container > button:hover {
+  background-color: transparent;
+  border: 3px solid #224c8f;
+  color: #224c8f;
+}
+
+@media (max-width: 380px) {
+  .btn-container > button {
+    margin: 0 0.1rem;
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #224c8f;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    border: 3px solid #224c8f;
+    transition: all 0.2s ease;
+  }
+
+  .counter-card {
+    background-color: #6a67ce;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+}
